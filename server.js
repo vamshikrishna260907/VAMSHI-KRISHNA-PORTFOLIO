@@ -10,10 +10,7 @@ const DATA_FILE = path.join(__dirname, 'data', 'content.json');
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json({ limit: '1mb' }));
-
-function safePath(requestPath) {
-  return path.join(__dirname, requestPath.slice(1));
-}
+app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
@@ -25,10 +22,6 @@ app.get('/admin', (req, res) => {
 
 app.get('/admin.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'admin.html'));
-});
-
-app.get('/src/*', (req, res) => {
-  res.sendFile(safePath(req.path));
 });
 
 app.get('/api/content', async (req, res) => {
@@ -54,7 +47,12 @@ app.post('/api/content', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Portfolio backend running at http://localhost:${PORT}`);
-  console.log('Edit content at http://localhost:' + PORT + '/admin.html');
-});
+export default app;
+
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Portfolio backend running at http://localhost:${PORT}`);
+    console.log('Edit content at http://localhost:' + PORT + '/admin.html');
+  });
+}
+
