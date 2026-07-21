@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Content Editor</title>
+    <style>
+      body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #070712; color: #f4f4ff; }
+      .page { max-width: 980px; margin: 32px auto; padding: 24px; }
+      h1 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 3rem); }
+      p { margin: 0 0 24px; color: #bdbce0; line-height: 1.7; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+      button, .link { border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.04); color: #f4f4ff; padding: 12px 18px; border-radius: 10px; cursor: pointer; text-decoration: none; }
+      button:hover, .link:hover { background: rgba(255,255,255,.1); }
+      textarea { width: 100%; min-height: 560px; border: 1px solid rgba(255,255,255,.12); border-radius: 16px; background: #0a0b16; color: #eef0ff; padding: 18px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.95rem; line-height: 1.5; resize: vertical; }
+      #status { margin-top: 14px; min-height: 1.25rem; color: #82cfff; }
+      .warning { color: #ff8b8b; }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <h1>Portfolio Editor</h1>
+      <p>Use this page to load and save the website content stored on the backend. The content is persisted in <code>data/content.json</code>.</p>
+      <div class="actions">
+        <button id="load">Load Content</button>
+        <button id="save">Save Content</button>
+        <a class="link" href="/">Preview site</a>
+      </div>
+      <textarea id="editor" spellcheck="false"></textarea>
+      <div id="status"></div>
+    </main>
+    <script type="module" src="src/admin.js"></script>
+  </body>
+</html>

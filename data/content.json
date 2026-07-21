@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "title": "B Vamshi Krishna | Full Stack Developer",
+    "description": "Portfolio of B Vamshi Krishna — Full Stack Developer and AI Enthusiast."
+  },
+  "hero": {
+    "eyebrow": "AVAILABLE FOR OPPORTUNITIES",
+    "kicker": "HELLO, I'M",
+    "name": "B VAMSHI",
+    "highlight": "KRISHNA",
+    "copy": "Full Stack Developer × AI Enthusiast\nbuilding thoughtful digital experiences.",
+    "actions": [
+      { "text": "View my work", "href": "#projects", "type": "primary" },
+      { "text": "Get in touch", "href": "#contact", "type": "ghost" }
+    ],
+    "socials": [
+      { "label": "in", "href": "https://www.linkedin.com/in/vamshi-krishnaz-1a5059423" },
+      { "label": "gh", "href": "https://github.com/vamshikrishna260907/" },
+      { "label": "ig", "href": "https://www.instagram.com/__vxmshi_?igsh=M3hyZHhwNDJhY2I4" }
+    ],
+    "card": {
+      "title": "CURRENTLY CREATING",
+      "code": [
+        "const developer = {",
+        "  name: 'Vamshi',",
+        "  focus: 'impactful things',",
+        "  status: 'building'",
+        "}"
+      ],
+      "spark": "✦"
+    }
+  },
+  "about": {
+    "heading": "A curious mind\nwith a maker's\nheart.",
+    "lead": "I'm a full stack developer focused on transforming ideas into elegant, useful digital products.",
+    "body": "From intuitive frontends to dependable backend systems, I enjoy the whole journey of building. I bring an experimental AI mindset and a practical, people-first approach to every project.",
+    "linkText": "More about me",
+    "linkHref": "#contact",
+    "stats": [
+      { "value": "10+", "label": "Projects crafted" },
+      { "value": "2+", "label": "Years learning & building" },
+      { "value": "05", "label": "Hackathons & events" }
+    ]
+  },
+  "skills": [
+    { "title": "Gaming", "description": "Good at online gaming" }
+  ],
+  "experience": [
+    { "date": "Ongoing", "title": "Improving My Skills", "description": "Currently improving my skills in every way possible." }
+  ],
+  "projects": [
+    {
+      "name": "Wonderland Restaurant",
+      "category": "Asian Restaurant",
+      "description": "It is an Asian restaurant with world-class dishes and flavours.",
+      "stack": "HTML · CSS · JavaScript",
+      "github": "https://github.com/your-github-username/WONDERLAND-RESTAURANT",
+      "liveDemo": "https://wonderland-restaurant-tau.vercel.app/",
+      "badge": "✦",
+      "color": "pink"
+    }
+  ],
+  "banner": "LET'S BUILD SOMETHING AMAZING — LET'S BUILD SOMETHING AMAZING — ",
+  "contact": {
+    "heading": "Have an idea?\nLet's talk.",
+    "body": "I'm always excited to hear about a new project, opportunity, or creative challenge.",
+    "email": "hello@vamshikrishna.dev",
+    "emailHref": "mailto:hello@vamshikrishna.dev"
+  },
+  "footer": {
+    "brand": "VK.",
+    "copyright": "© 2026 B Vamshi Krishna. Made with intent."
+  }
+}
